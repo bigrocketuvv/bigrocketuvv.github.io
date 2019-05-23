@@ -1,19 +1,39 @@
 body
 {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+	margin: 0 auto;
 	font-family: consolas; 
 	background-color: black;
 }
+.text{
+	margin: 0 auto;
+	padding: 0;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.backlogo
+{
+	padding: 0;
+	margin: 0 auto;
+	display: flex;
+	background-color: white;
+	width: 150px;
+	height: 120px;
+
+}
+.logo
+{
+	width: 150px;
+	height: 130px;
+	position: relative;
+	align-items: center;
+}
 .type
 {
+	margin: auto;
 	color: white;
-	padding: 50px;
+	padding: 10px;
 	font-family: 2em;
 }
 
@@ -34,6 +54,7 @@ body
 		visibility: visible;
 	}
 }
+
 .button
 {
 	position: absolute;
