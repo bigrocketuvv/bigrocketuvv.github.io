@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap&subset=latin-ext');
+
+body {
+  font-family: Verdana, sans-serif;
+  background-image: url(back.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  color: white;
+  bac
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.titulo {
+	font-family: 'Bungee Shade', cursive;
+	text-align: center;
+	color: yellow;
+    border: 5px red;
+}
+
+.row > .column {
+  padding: 5px;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: 0 auto;
+  padding: 1px;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: transparent;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: 30%;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pergunta {
+	text-align: center;
+}
+.alternativas {
+	text-align: center;
+	padding-top: 8%;
+	margin: 0 auto;
+}
+
+.button {
+	width: 150px;
+	border-top: 1px solid #96d1f8;
+	background: #5cb34b;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#5cb34b));
+	background: -webkit-linear-gradient(top, #3e779d, #5cb34b);
+	background: -moz-linear-gradient(top, #3e779d, #5cb34b);
+	background: -ms-linear-gradient(top, #3e779d, #5cb34b);
+	background: -o-linear-gradient(top, #3e779d, #5cb34b);
+	padding: 5.5px 9px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #dedede;
+	font-size: 20px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.button:hover {
+   border-top-color: #196da6;
+   background: #196da6;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #fa1919;
+   background: #fa1919;
+}
+
+.a70-width{
+ width: 70%;
+ height: auto;
+ display: inline-block;
+}
