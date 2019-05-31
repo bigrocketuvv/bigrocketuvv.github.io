@@ -2,7 +2,8 @@ body
 {
 	margin: 0 auto;
 	font-family: consolas; 
-	background-color: white;
+	background: url(back.jpeg);
+	background-blend-mode: lighten;
 }
 .text{
 	margin: 0 auto;
@@ -17,9 +18,9 @@ body
 	padding: 0;
 	margin: 0 auto;
 	display: flex;
-	background-color: white;
 	width: 150px;
 	height: 120px;
+	opacity: 2;
 
 }
 .logo
@@ -32,7 +33,7 @@ body
 .type
 {
 	margin: auto;
-	color: black;
+	color: white;
 	padding: 10px;
 	font-family: 2em;
 }
@@ -58,7 +59,7 @@ body
 .button
 {
 	position: absolute;
-	top: 90%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 200px;
