@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
 
 body {
   font-family: Verdana, sans-serif;
   background-image: url(back.jpg);
   background-position: center center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
   color: white;
-  bac
-}
+ }
 
 * {
   box-sizing: border-box;
@@ -23,9 +24,9 @@ body {
 }
 
 .row > .column {
-  padding: 5px;
+  padding: 2px;
   margin: 0 auto;
-  width: 50%;
+  width: 45%;
   height: auto;
 }
 
@@ -130,7 +131,7 @@ body {
 }
 
 img {
-  margin-bottom: 30%;
+  margin-bottom: 10%;
 }
 
 .caption-container {
@@ -157,13 +158,47 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.pergunta {
-	text-align: center;
+.text {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  font-size: 28px;
+
 }
+.type .char
+{
+  visibility: hidden;
+  animation: animate 1s steps(2) forwards;
+  animation-delay: calc(0.04s * var(--char-index));
+}
+@keyframes animate
+{
+  0%
+  {
+    visibility: hidden;
+  }
+  100%
+  {
+    visibility: visible;
+  }
+}
+
 .alternativas {
+  animation: animateb 4s steps(2) forwards;
 	text-align: center;
 	padding-top: 8%;
 	margin: 0 auto;
+}
+
+@keyframes animateb
+{
+  0%
+  {
+    visibility: hidden;
+  }
+  100%
+  {
+    visibility: visible;
+  }
 }
 
 .button {
@@ -189,6 +224,7 @@ img.hover-shadow {
 	text-decoration: none;
 	vertical-align: middle;
 }
+
 .button:hover {
    border-top-color: #196da6;
    background: #196da6;

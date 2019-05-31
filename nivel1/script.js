@@ -35,6 +35,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-function errado () {
-  document.getElementById("errado").style.display = "block";
+function errado() {
+  document.getElementById("outside").className = "errado";
 }
