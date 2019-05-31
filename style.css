@@ -2,7 +2,9 @@ body
 {
 	
 	font-family: consolas; 
-	background-color: white;
+	background: url(back.png);
+	background-repeat: no-repeat;
+	background-blend-mode: lighten;
 	display: flex;
 	align-items: center;
 	justify-content: center;
