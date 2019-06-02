@@ -1,0 +1,80 @@
+body
+{
+	
+	font-family: consolas; 
+	background: url(back.png);
+	background-repeat: no-repeat;
+	background-blend-mode: lighten;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.imagem
+ {
+ 	max-width: 100%;
+  	height: auto;
+ }
+
+ .button
+{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 30px;
+	z-index: 1;
+}
+
+.button:hover
+{
+	visibility: visible;
+	animation: animateb 8s linear infinite;
+}
+@keyframes animateb
+{
+	0%
+	{
+		background-position: 0%;
+	}
+	100%
+	{
+		background-position: 400%;
+	}
+
+}
+.button: before
+{
+	visibility: visible;
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	z-index: -1;
+	background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border-radius: 30px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.button:hover:before {
+	filter: blur(20px);
+	opacity: 1;
+	animation: animateb 8s linear infinite;
+
+}
