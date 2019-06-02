@@ -51,9 +51,11 @@ body {
 }
 
 .button_nv2 {
-   background-color: green;
-   background: url(lock.png);
-   background-position: center;
+   background-image: -webkit-linear-gradient(top, #7c8696, #1f1f21);
+   background-image: -moz-linear-gradient(top, #7c8696, #1f1f21);
+   background-image: -ms-linear-gradient(top, #7c8696, #1f1f21);
+   background-image: -o-linear-gradient(top, #7c8696, #1f1f21);
+   background-image: linear-gradient(to bottom, #7c8696, #1f1f21);
    -webkit-border-radius: 10px;
    -moz-border-radius: 10px;
    border-radius: 20px;
@@ -67,34 +69,11 @@ body {
    text-decoration: none;
    display: inline-block;
    cursor: pointer;
-   position: relative;
-}
-
-.button_nvimg {
-   background-image: -webkit-linear-gradient(top, #02F60B, #3E21D0);
-   background-image: -moz-linear-gradient(top, #02F60B, #3E21D0);
-   background-image: -ms-linear-gradient(top, #02F60B, #3E21D0);
-   background-image: -o-linear-gradient(top, #02F60B, #3E21D0);
-   background-image: linear-gradient(to bottom, #02F60B, #3E21D0);
-   -webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   border-radius: 20px;
-   color: #FFFFFF;
-   font-family: Verdana;
-   font-size: 10px;
-   font-weight: 600;
-   padding: 0px;
-   text-shadow: 0px 0px 26px #000000;
-   border: solid #337FED 1px;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
    align-items: center;
-   margin-left: 15%;
 }
 
 .text {
-	opacity: 0;
+	opacity: 1;
 }
 
 .divbt {
